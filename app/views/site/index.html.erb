@@ -1,1 +1,71 @@
-<h2>Simple Inventory</h2>
+<center>
+	<% form_tag do %>
+		<%= text_field_tag :search_string, '', :class => 'search' %>
+		<%= submit_tag 'Search' %>
+	<% end %>
+	
+	<hr class="space"/>
+	<hr class="space"/>
+	
+	<% unless @merchants.blank? %>
+		<table>
+			<thead>
+		  	<tr>
+			    <th>Merchants</th>
+			    <th>Address</th>
+			    <th>Phone number</th>
+			    <th>Website</th>
+			    <th>Tags</th>
+					<th>&nbsp;</th>
+			  </tr>
+			</thead>
+
+			<tbody>
+			<% @merchants.each do |merchant| %>
+			  <tr>
+			    <td><%=h merchant.name %></td>
+			    <td><%=h merchant.address %></td>
+			    <td><%=h merchant.phone_number %></td>
+			    <td><%=h merchant.website %></td>
+			    <td><%=h merchant.tags %></td>
+			    <td><%= link_to 'Show', merchant %></td>
+			  </tr>
+			<% end %>
+			</tbody>
+		</table>
+	<% end %>
+	
+	<hr class="space"/>
+	
+	<% unless @items.blank? %>
+		<table>
+			<thead>
+		  	<tr>
+			    <th>Items</th>
+			    <th>Price</th>
+			    <th>Currency</th>
+			    <th>Tags</th>
+			    <th>Description</th>
+			    <th>Rating</th>
+					<th>&nbsp;</th>
+			  </tr>
+			</thead>
+
+			<tbody>
+			<% @items.each do |item| %>
+			  <tr>
+			    <td><%=h item.name %></td>
+			    <td><%=h item.price %></td>
+			    <td><%=h item.currency %></td>
+			    <td><%=h item.tags %></td>
+			    <td><%=h item.description %></td>
+			    <td><%=h item.rating %></td>
+			    <td><%= link_to 'Show', item %></td>
+			  </tr>
+			<% end %>
+			</tbody>
+		</table>
+	<% end %>
+	
+	<%= set_focus_to_id 'search_string' %>
+</center>

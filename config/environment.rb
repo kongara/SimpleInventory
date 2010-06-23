@@ -20,6 +20,13 @@ Rails::Initializer.run do |config|
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
 
+  config.gem "websolr-sunspot_rails"
+  
+  # Enclosing error fields inside span tag instead of the default div tag
+  config.action_view.field_error_proc = Proc.new do |html_tag, instance_tag|
+    "<span class='fieldWithErrors'>#{html_tag}</span>"
+  end
+  
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named
   # config.plugins = [ :exception_notification, :ssl_requirement, :all ]

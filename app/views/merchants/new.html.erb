@@ -1,31 +1,40 @@
-<h1>New merchant</h1>
+<div class="span-24">
+	<% form_for(@merchant) do |f| %>
+		<% unless @merchant.errors.blank? %>
+			<div class="span-16 error">
+				<%= f.error_messages %>
+			</div>
+		<% end %>
+	
+		<div class="span-24">
+	  	<p>
+		    <%= f.label :name %><br />
+		    <%= f.text_field :name, :class => 'text' %>
+		  </p>
+		  <p>
+		    <%= f.label :address %><br />
+		    <%= f.text_field :address, :class => 'text' %>
+		  </p>
+		  <p>
+		    <%= f.label :phone_number %><br />
+		    <%= f.text_field :phone_number, :class => 'text' %>
+		  </p>
+		  <p>
+		    <%= f.label :website %><br />
+		    <%= f.text_field :website, :class => 'text' %>
+		  </p>
+		  <p>
+		    <%= f.label :tags %><br />
+		    <%= f.text_field :tags, :class => 'text' %>
+		  </p>
+		  <p>
+		    <%= f.submit 'Create' %>
+		  </p>
+		</div>
+		
+	<% end %>
 
-<% form_for(@merchant) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :address %><br />
-    <%= f.text_field :address %>
-  </p>
-  <p>
-    <%= f.label :phone_number %><br />
-    <%= f.text_field :phone_number %>
-  </p>
-  <p>
-    <%= f.label :website %><br />
-    <%= f.text_field :website %>
-  </p>
-  <p>
-    <%= f.label :tags %><br />
-    <%= f.text_field :tags %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
-<% end %>
-
-<%= link_to 'Back', merchants_path %>
+	<div class="span-24 last">
+			<%= link_to 'Back', merchants_path, :class => 'button' %>
+	</div>
+</div>

@@ -1,39 +1,44 @@
-<h1>New item</h1>
+<div class="span-24">
+	<% form_for(@item) do |f| %>
+	  <% unless @item.errors.blank? %>
+			<div class="span-16 error">
+				<%= f.error_messages %>
+			</div>
+		<% end %>
 
-<% form_for(@item) do |f| %>
-  <%= f.error_messages %>
+		<div class="span-24">
+	 	 <p>
+		    <%= f.label :name %><br />
+		    <%= f.text_field :name, :class => 'text' %>
+		  </p>
+		  <p>
+		    <%= f.label :price %><br />
+		    <%= f.text_field :price, :class => 'text' %>
+		  </p>
+		  <p>
+		    <%= f.label :currency %><br />
+		    <%= f.text_field :currency, :class => 'text' %>
+		  </p>
+		  <p>
+		    <%= f.label :tags %><br />
+		    <%= f.text_field :tags, :class => 'text' %>
+		  </p>
+		  <p>
+		    <%= f.label :description %><br />
+		    <%= f.text_area :description %>
+		  </p>
+		  <p>
+		    <%= f.label :rating %><br />
+		    <%= f.text_field :rating, :class => 'text' %>
+		  </p>
+		  <p>
+		    <%= f.submit 'Create' %>
+		  </p>
+		</div>
+	<% end %>
 
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :price %><br />
-    <%= f.text_field :price %>
-  </p>
-  <p>
-    <%= f.label :currency %><br />
-    <%= f.text_field :currency %>
-  </p>
-  <p>
-    <%= f.label :tags %><br />
-    <%= f.text_field :tags %>
-  </p>
-  <p>
-    <%= f.label :description %><br />
-    <%= f.text_area :description %>
-  </p>
-  <p>
-    <%= f.label :rating %><br />
-    <%= f.text_field :rating %>
-  </p>
-  <p>
-    <%= f.label :number_of_ratings %><br />
-    <%= f.text_field :number_of_ratings %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
-<% end %>
-
-<%= link_to 'Back', items_path %>
+	<div class="span-24 last">
+		<%= link_to 'Back', items_path, :class => 'button' %>
+	</div>
+	
+</div>

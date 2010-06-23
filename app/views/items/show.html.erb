@@ -1,38 +1,64 @@
-<p>
-  <b>Name:</b>
-  <%=h @item.name %>
-</p>
+<div class="span-24">
+	<div class="span-3">
+  	<b>Name:</b>
+	</div>
+	<div class="span-21 last">
+  	<%=h @item.name %>
+	</div>
+</div>
 
-<p>
-  <b>Price:</b>
-  <%=h @item.price %>
-</p>
+<div class="span-24">
+	<div class="span-3">
+  	<b>Price:</b>
+	</div>
+	<div class="span-21 last">
+  	<%=h @item.price %>
+	</div>
+</div>
 
-<p>
-  <b>Currency:</b>
-  <%=h @item.currency %>
-</p>
+<div class="span-24">
+	<div class="span-3">
+  	<b>Currency:</b>
+	</div>
+	<div class="span-21 last">
+  	<%=h @item.currency %>
+	</div>
+</div>
 
-<p>
-  <b>Tags:</b>
-  <%=h @item.tags %>
-</p>
+<div class="span-24">
+	<div class="span-3">
+  	<b>Tags:</b>
+	</div>
+	<div class="span-21 last">
+  	<%=h @item.tags %>
+	</div>
+</div>
 
-<p>
-  <b>Description:</b>
-  <%=h @item.description %>
-</p>
+<div class="span-24">
+	<div class="span-3">
+  	<b>Description:</b>
+  </div>
+  <div class="span-21 last">
+  	<%=h @item.description %>
+	</div>
+</div>
 
-<p>
-  <b>Rating:</b>
-  <%=h @item.rating %>
-</p>
+<div class="span-24">
+	<div class="span-3">
+  	<b>Rating:</b>
+	</div>
+	<div class="span-21 last">
+  	<%=h @item.rating %>
+	</div>
+</div>
 
-<p>
-  <b>Number of ratings:</b>
-  <%=h @item.number_of_ratings %>
-</p>
+<hr class="space"/>
 
-
-<%= link_to 'Edit', edit_item_path(@item) %> |
-<%= link_to 'Back', items_path %>
+<div class="span-24">
+	<div class="span-2">
+		<%= link_to 'Back', items_path, :class => 'button' %>
+	</div>
+	<div class="span-22 last">
+		<%= link_to 'Edit', edit_item_path(@item), :class => 'button positive' %>
+	</div>
+</div>
