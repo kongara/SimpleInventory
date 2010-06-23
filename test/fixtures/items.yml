@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  price: 1.5
+  currency: MyString
+  tags: MyString
+  description: MyText
+  rating: 1
+  number_of_ratings: 1
+
+two:
+  name: MyString
+  price: 1.5
+  currency: MyString
+  tags: MyString
+  description: MyText
+  rating: 1
+  number_of_ratings: 1

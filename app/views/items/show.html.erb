@@ -1,0 +1,38 @@
+<p>
+  <b>Name:</b>
+  <%=h @item.name %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%=h @item.price %>
+</p>
+
+<p>
+  <b>Currency:</b>
+  <%=h @item.currency %>
+</p>
+
+<p>
+  <b>Tags:</b>
+  <%=h @item.tags %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @item.description %>
+</p>
+
+<p>
+  <b>Rating:</b>
+  <%=h @item.rating %>
+</p>
+
+<p>
+  <b>Number of ratings:</b>
+  <%=h @item.number_of_ratings %>
+</p>
+
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>
