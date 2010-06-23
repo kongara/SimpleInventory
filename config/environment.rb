@@ -20,7 +20,7 @@ Rails::Initializer.run do |config|
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
 
-  config.gem "websolr-sunspot_rails"
+  # config.gem "websolr-sunspot_rails"
   
   # Enclosing error fields inside span tag instead of the default div tag
   config.action_view.field_error_proc = Proc.new do |html_tag, instance_tag|
