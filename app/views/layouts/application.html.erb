@@ -1,0 +1,39 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Items: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'blueprint/screen.css', 'blueprint/plugins/buttons/screen.css', 'common.css' %>	
+</head>
+<body>
+
+<div class="container" >
+
+	<div class="blue">
+		<div id="slatenav">
+			<ul>
+				<% home_class = 'current' if params[:controller] == 'site' %>
+				<% merchants_class = 'current' if params[:controller] == 'merchants' %>
+				<% items_class = 'current' if params[:controller] == 'items' %>
+
+				<li><%= link_to "Home", url_for(:controller => 'site', :action => 'index'), :class => "#{home_class}" %> </li>
+				<li><%= link_to "Merchants", merchants_path, :class => "#{merchants_class}" %></li>
+				<li><%= link_to "Items", items_path, :class => "#{items_class}" %></li>
+			</ul>
+
+		</div>
+	</div>
+	<hr class="space"/>
+
+	<div class="span-24">
+		<%= yield %>
+	</div>
+</div>
+
+</body>
+</html>
+
+

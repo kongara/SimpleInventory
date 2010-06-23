@@ -1,0 +1,251 @@
+input.medium {margin:0.5em 0;border:1px solid #bbb;}
+input.medium:focus {border:1px solid #666;}
+input.medium {width:150px;padding:5px;}
+
+input.long {margin:0.5em 0;border:1px solid #bbb;}
+input.long:focus {border:1px solid #666;}
+input.long {width:450px;padding:5px;}
+
+input.title_small {margin:0.5em 0;border:1px solid #bbb;}
+input.title_small:focus {border:1px solid #666;}
+input.title_small {width:100px;padding:5px;}
+input.title_small {font-size:1.5em;}
+
+input.title_phone {margin:0.5em 0;border:1px solid #bbb;}
+input.title_phone:focus {border:1px solid #666;}
+input.title_phone {width:140px;padding:5px;}
+input.title_phone {font-size:1.5em;}
+
+input.title_medium {margin:0.5em 0;border:1px solid #bbb;}
+input.title_medium:focus {border:1px solid #666;}
+input.title_medium {width:300px;padding:5px;}
+input.title_medium {font-size:1.5em;}
+
+input.search {margin:0.5em 0;border:1px solid #bbb;}
+input.search:focus {border:1px solid #666;}
+input.search   { width: 600px; padding:5px; }
+input.search   { font-size:1.5em; }
+
+input.search_medium {margin:0.5em 0;border:1px solid #bbb;}
+input.search_medium:focus {border:1px solid #666;}
+input.search_medium   { width: 530px; padding:5px; }
+input.search_medium   { font-size:1.2em; }
+
+input.title_large {margin:0.5em 0;border:1px solid #bbb;}
+input.title_large:focus {border:1px solid #666;}
+input.title_large   { width: 800px; padding:5px; }
+input.title_large   { font-size:1.5em; }
+
+select {font-size:1.2em;}
+
+.custom_links a {
+  text-decoration: underline;
+  color: #000000;
+}
+
+.custom_links a:hover {
+  color: #990099;
+}
+
+.plain_links a {
+  text-decoration: none;	
+  color: #000000;
+}
+
+.plain_links a:hover {
+  text-decoration: underline;
+  color: #333333;
+}
+
+.plain_links a:visited {
+  text-decoration: none;
+  color: #333333;
+}
+
+.text_area_big {
+  width: 785px; 
+  height: 100px; 
+  margin:0.5em 0.5em 0.5em 0;
+}
+
+.text_area_large {
+  width: 930px; 
+  height: 80px; 
+  margin:0.5em 0.5em 0.5em 0;
+}
+
+hr.purple {
+  background: #660066;
+  height: 1px;
+}
+
+/* Required field */
+
+.required_field:after {
+  content: "*";
+  display: inline;
+  color: red;
+  padding-left: 0.5em;
+}
+
+/* Copied from scaffold.css */
+.fieldWithErrors input, .fieldWithErrors textarea {
+	border: 2px solid #FBC2C4;
+	/*display: table;*/
+}
+
+#errorExplanation h2 {
+	text-align: left;
+	font-weight: bold;
+	padding: 5px 5px 5px 15px;
+	font-size: 12px;
+	margin: -7px;
+	color: #c00;
+}
+
+#errorExplanation p {
+	color: #333;
+	margin-bottom: 0;
+	padding: 5px;
+}
+
+#errorExplanation ul li {
+	font-size: 12px;
+	list-style: square;
+}
+
+.label {
+	font-size: medium; 
+	line-height: 1.2em; 
+	margin-bottom: 1.2em;
+	color: #666;
+}
+
+.custom_label {
+	font-size: medium; 
+	line-height: 1.7em; 
+	margin-bottom: 1.2em;
+	color: #666;
+}
+
+.content {
+	font-size: medium;
+	font-weight: lighter;
+	line-height: 1.2em; 
+	margin-bottom: 1.2em;
+}
+
+.text_large { 
+	font-size: 1.2em; 
+	line-height: 1.5em; 
+	margin-bottom: 1.2em; 
+}
+
+.light_green_box { 
+  padding: 1.5em; 
+  margin-bottom: 1.5em; 
+  background: #D4F0C1;
+  /*background: #CCFFCC; */
+}
+
+.header { 
+  font-size: 15px; 
+  font-weight: bold;
+  line-height: 1.5em;
+  padding: 5px;
+  margin-bottom: 10px; 
+  background: #CBB6D8;
+}
+
+.light_grey_box {
+	padding: 1.5em; 
+	margin-bottom: 1.5em; 
+	background: #eee;
+}
+
+.light_purple_box {
+  padding: 1.5em; 
+  margin-bottom: 1.5em; 
+  background: #CBB6D8;
+}
+
+.login_details {
+	font-size: 1.2em;
+}
+
+.top_navigation_bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-image: url('slate_images/blueslate_background.gif');
+}
+
+.text_bar {
+	background-color: #FFFBE1;
+	border-top: 2px solid #D6CE95;
+	border-bottom: 2px solid #EFEBD5;
+	text-align: none;
+	padding: 10px;
+	clear: both;
+}
+
+/* ----------- minitabs -------------- */
+#minitabs {
+	width: 100%;
+	float: left;
+	font-size: small; /* could be specified at a higher level */
+	margin: 0;
+	padding: 0 10px 0 10px;
+	border-bottom: 1px solid #333;
+	}
+
+#minitabs li {
+	float: left;
+	margin: 0; 
+	padding: 0;
+	display: inline;
+	list-style: none;
+	}
+	
+#minitabs a:link, #minitabs a:visited {
+	float: left;
+	font-size: 100%;
+	line-height: 20px;
+	font-weight: bold;
+	margin: 0 10px 0 10px;
+	text-decoration: none;
+	color: #999;
+	}
+
+#minitabs a.active:link, #minitabs a.active:visited, #minitabs a:hover {
+	border-bottom: 4px solid #333;
+	padding-bottom: 2px;
+	color: #333;
+	}
+
+/* --------- end minitabs ------------ */
+
+/* ---------------------- Blueslate nav ---------------------- */
+
+.blue #slatenav{position:relative;display:block;height:42px;font-size:11px;font-weight:bold;background:transparent url(slate_images/blueslate_background.gif) repeat-x top left;font-family:Arial,Verdana,Helvitica,sans-serif;text-transform:uppercase;}
+.blue #slatenav ul{margin:0px;padding:0;list-style-type:none;width:auto;}
+.blue #slatenav ul li{display:block;float:left;margin:0 1px 0 0;}
+.blue #slatenav ul li a{display:block;float:left;color:#D5F1FF;text-decoration:none;padding:14px 22px 0 22px;height:28px;}
+.blue #slatenav ul li a:hover,.blue #slatenav ul li a.current{color:#fff;background:transparent url(slate_images/blueslate_backgroundOVER.gif) no-repeat top center;}
+
+/* ---------------------- END Blueslate nav ---------------------- */
+
+
+/* Old blueprint table
+-------------------------------------------------------------- */
+
+table.classic   { margin-bottom: 1.4em; }
+table.classic th      { border-bottom: 2px solid #ccc; font-weight: bold; background: #ffffff;}
+table.classic th, table.classic td   { padding: 4px 10px 4px 0; }
+table.classic thead   { font-style: italic;}
+table.classic tfoot   { font-style: italic; }
+table.classic caption { background: #ffc; }
+
+/* Use this if you use span-x classes on th/td. */
+table.classic .last { padding-right: 0; }
